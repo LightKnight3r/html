@@ -1,0 +1,283 @@
+/*
+Theme Name: Heyu
+Theme URI: http://heyu.vn/
+Author: the Heyu team
+Author URI: http://heyu.vn/
+Description: Heyu Theme brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2019 works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Heyu
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like Heyu, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.header-area .header-inner .btn-wrapper .boxed-btn:hover {
+    color: #fff;
+}
+
+.footer-area {
+    background-image: -webkit-linear-gradient(50deg, #226fb7 0%, #226fb7 100%);
+}
+
+.single-testimonial-item .hover .hover-inner .icon, .back-to-top, .how-it-work-tab-nav .nav-tabs .nav-item .nav-link.active, .wpcf7-form-control.wpcf7-submit, .header-area .header-inner .btn-wrapper .boxed-btn, .header-area .header-inner .btn-wrapper .boxed-btn.blank:hover, .boxed-btn.gd-bg-1 {
+    background-image: -moz-linear-gradient(50deg, #226fb7 0%, #226fb7 100%);
+    background-image: -webkit-linear-gradient(50deg, #226fb7 0%, #226fb7 100%);
+    background-image: -ms-linear-gradient(50deg, #226fb7 0%, #226fb7 100%);
+}
+
+a.boxed-btn:hover, .sk-circle .sk-child:before, .navigation li a:hover, .navigation li.active a {
+    background-image: -moz-linear-gradient(50deg, #226fb7 0%, #226fb7 100%) !important;
+    background-image: -webkit-linear-gradient(50deg, #226fb7 0%, #226fb7 100%) !important;
+    background-image: -ms-linear-gradient(50deg, #226fb7 0%, #226fb7 100%) !important;
+}
+
+.header-area .header-inner .btn-wrapper .boxed-btn.blank {
+    border: 2px solid #226fb7;
+}
+
+.section-title .subtitle, .download-area-wrapper .subtitle, .video-area .right-content-area .subtitle, .contact-area-wrapper .subtitle {
+    color: #226fb7;
+}
+
+.widget_media_image {
+    margin-bottom: 25px;
+    display: block;
+}
+
+.widget_media_image h3.widget-title {
+    display: none;
+}
+
+.single-price-plan-01 .price-body p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.single-price-plan-01:hover .price-body p {
+    color: #666666;
+}
+
+.info-area p, .info-area a, .info-area h3 {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.info-area a:hover {
+    color: #fff;
+}
+
+div#wpcf7-f379-o1 {
+    margin-left: 15px;
+}
+
+.widget_popular_posts .single-popular-post-item .thumb img {
+    width: 80px;
+    height: 70px;
+}
+
+.mapouter {
+    margin: 0 auto;
+}
+
+.single-post-details-item .thumb img {
+    width: 100%;
+    object-fit: cover;
+}
+
+ul.sub-menu {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /*width: 100%;*/
+    z-index: 1000;
+}
+
+.menu-item-has-children a:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    /*color: white;*/
+}
+
+ul#primary-menu li:hover ul.sub-menu {
+    display: block;
+    background: #fefefe;
+    border: 1px solid rgba(0,0,0,.15);
+    font-size: 1rem;
+}
+
+ul#primary-menu li:hover ul.sub-menu li a {
+    padding: .25rem 1.5rem;
+    color: rgba(0,0,0,.5);
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-weight: 400;
+    text-align: inherit;
+}
+
+ul#primary-menu li:hover ul.sub-menu li .nav-link:before {
+    bottom: -3px;
+    left: 25px;
+}
+
+ul#primary-menu li:hover ul.sub-menu li a:hover {
+    background-color: #226fb7;
+    color: #fff;
+}
+
+ul#primary-menu li:hover ul.sub-menu li a:after {
+    display: none;
+}
+
+/* PAGINATION START */
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    color: #fff;
+    text-decoration:none;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.navigation li.next-page {
+    display: none;
+}
+
+.navigation li a,
+.navigation li a:hover,
+.navigation li.active a,
+.navigation li.disabled {
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 9px 16px;
+    border: 2px solid #ededed;
+    font-weight: 600;
+    color: #666666;
+}
+
+.navigation li a:hover,
+.navigation li.active a {
+    background-image: -webkit-linear-gradient(50deg, #5e2ced 0%, #9749f8 100%);
+    color: #fff;
+}
+
+.nav_menus_widget ul li {
+     margin: 0;
+}
+/* PAGINATION END */
+
+/* fLAG START */
+ul.sm-flag {
+    margin: 40px 10px;
+}
+
+ul.sm-flag li {
+    list-style: none;
+    display: inline-block;
+}
+
+.lang-item {
+    list-style: none;
+    display: none;
+}
+/* FLAG END */
+
+/* CONTACT FORM 7 STATR */
+.wpcf7-form-control-wrap input {
+    border: 1px solid #ededed;
+    height: 60px;
+    padding: 0 20px;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.wpcf7-form-control-wrap textarea {
+    resize: none;
+    padding: 20px;
+    min-height: 150px;
+
+    border: 1px solid #ededed;
+    height: 60px;
+
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    border-radius: 30px;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 60px;
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    /*background-image: -webkit-linear-gradient(50deg, #5e2ced 0%, #9749f8 100%);*/
+}
+/* CONTACT FORM 7 END */
+
+/* FOOTER START */
+.footer-top .custom-logo-link {
+    margin-bottom: 25px;
+    display: block;
+}
+/* FOOTER END */
+
+@media only screen and (min-width: 980px) {
+    .feature-list .single-feature-list {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .menu-item-has-children a:after {
+        color: #8e96a0;
+    }
+
+    .feature-list .single-feature-list {
+        width: 100%;
+    }
+
+}
+

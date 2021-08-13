@@ -1,0 +1,29 @@
+<?php
+/* Template Name: Page Contact */
+?>
+<?php
+$pages = get_pages(array(
+	'meta_key' => '_wp_page_template',
+	'meta_value' => 'template/page-contact.php'
+));
+foreach($pages as $page){
+	$page_id = $page->ID;
+}
+$page_id = get_post($page_id);
+$content = $page_id->post_content;
+$content = apply_filters('the_content', $content);
+$content = str_replace(']]>', ']]>', $content);
+?>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="contact-area-wrapper" id="contact"><!-- contact area wrapper -->
+			<span class="subtitle"><?php echo get_the_title( $page_id ) ?></span>
+			<?php echo $content; ?>
+			<form action="index.html" id="contact_form_submit" class="contact-form sec-margin">
+				<div class="row">
+					<?php echo do_shortcode('[contact-form-7 id="379" title="Contact Heyu"]')?>
+				</div>
+			</form>
+		</div><!-- //. contact area wrapper -->
+	</div>
+</div>

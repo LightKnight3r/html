@@ -1,0 +1,45 @@
+<?php
+($lang == 'en') ? $category = get_term( 8 ) : $category = get_term( 54 );
+$args = array(
+    'post_type' => 'post',
+    'category_name'=> $category->slug,
+    'posts_per_page'=> 3,
+    'order'=> 'ASC',
+);
+$query = new WP_Query( $args );
+
+?>
+
+<section class="pricing-plan-area pricing-plan-bg" id="pricing">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="section-title white"><!-- section title -->
+                    <span class="subtitle"><?php echo $category->name ?></span>
+                    <?php echo $category->description ?>
+                </div><!-- //. section title -->
+            </div>
+        </div>
+        <div class="row">
+            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-price-plan-01 wow zoomIn"><!-- single price plan one -->
+                    <div class="price-header">
+                        <h4 class="name"><?php echo get_the_title() ?></h4>
+                        <div class="price-wrap">
+                            <span class="price"><?php echo get_the_excerpt() ?></span>
+                            <span class="month">/Mo</span>
+                        </div>
+                    </div>
+                    <div class="price-body">
+                        <?php echo get_the_content() ?>
+                    </div>
+                    <div class="price-footer">
+                        <a href="<?php echo get_the_permalink() ?>" class="boxed-btn btn-rounded gd-bg-2">Get Started</a>
+                    </div>
+                </div><!-- //. single price plan one -->
+            </div>
+            <?php endwhile; ?>
+        </div>
+    </div>
+</section>
